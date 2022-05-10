@@ -1,5 +1,5 @@
 #!/bin/bash
-# shell script to setup reverse proxy server on Nginx in Rocky linux
+# shell script to setup reverse proxy server using Nginx in Rocky linux
 
 # Update system
 sudo yum update -y
