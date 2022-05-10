@@ -47,13 +47,10 @@ http {
     } # end http
 EOT'
 
-# restart nginx service
-sudo systemctl restart nginx
-
 # test nginx configuration
 sudo /usr/sbin/nginx -t
 
-# allow traffic in SELinux
-sudo setenforce 0
+# restart nginx service
+sudo systemctl restart nginx
 
 echo "Completed"
