@@ -48,7 +48,7 @@ http {
 EOT'
 
 # restart nginx service
-sudo service nginx restart
+sudo systemctl restart nginx
 
 # test nginx configuration
 sudo /usr/sbin/nginx -t
