@@ -50,6 +50,9 @@ EOT'
 # test nginx configuration
 sudo /usr/sbin/nginx -t
 
+# allow permission to make network connections in SELinux
+sudo setsebool -P httpd_can_network_connect 1
+
 # restart nginx service
 sudo systemctl restart nginx
 
